@@ -1,17 +1,10 @@
-const Link = ({nums}) => {
+const Link = ({numbers}) => {
     return (
-        <ul>
-            <li className="listItem" key="0">
-                <img src="blue-origami-bird.png" alt="origami-bird-face-right" />
-            </li>
-            {nums.map((num) => (
-                <li className="listItem" key={num}>
-                    <a href="/">Going to {num}</a>
-                </li>
-            ))}
-        </ul>
-
-    );
+    numbers.map((number) => (
+        <li className="listItem" key={number}>
+            <a href="/">Going to {number}</a>
+        </li>
+    )));
 }
  
 export default Link;
